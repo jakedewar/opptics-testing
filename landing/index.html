@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opptics - Text Transformation Made Simple</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .background-gradient {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background:
+                radial-gradient(circle at 0% 0%, rgba(79, 70, 229, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 100% 0%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 50% 100%, rgba(244, 114, 182, 0.05) 0%, transparent 50%);
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900">
+    <div class="background-gradient"></div>
+    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-lg z-50 border-b border-slate-200/70">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-2 text-xl font-semibold text-gray-900">
+                <img src="/assets/logo.svg" alt="Opptics Logo" width="32" height="32" style="color: #4f46e5;">
+                Opptics
+            </div>
+            <div class="flex items-center gap-8">
+                <div class="hidden md:flex items-center gap-8">
+                    <a href="#features" class="text-gray-600 hover:text-indigo-600 transition-colors">Features</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-indigo-600 transition-colors">How
+                        it works</a>
+                    <a href="#pricing" class="text-gray-600 hover:text-indigo-600 transition-colors">Pricing</a>
+                </div>
+                <div class="flex items-center gap-4">
+                    <a href="#download" class="nav-cta">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Install Extension
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="transition-colors">
+        <section class="hero">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="emoji-circle">✨</span>
+                    <span>New: AI-Powered Industry Templates</span>
+                </div>
+                <h1>Speak your prospect's language, instantly</h1>
+                <p class="hero-subtitle">Transform your product demos in real-time with industry-specific terminology.
+                    Close more deals by showing prospects exactly what they want to see.</p>
+                <div class="cta-group">
+                    <a href="#download" class="primary-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                            <polyline points="7 10 12 15 17 10" />
+                            <line x1="12" y1="15" x2="12" y2="3" />
+                        </svg>
+                        Install Extension
+                    </a>
+                    <a href="#demo" class="secondary-button">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polygon points="10 8 16 12 10 16 10 8" />
+                        </svg>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge">
+                        <span class="number">50%</span>
+                        <span class="label">Faster Demo Prep</span>
+                    </div>
+                    <div class="badge">
+                        <span class="number">2x</span>
+                        <span class="label">Deal Conversion</span>
+                    </div>
+                    <div class="badge">
+                        <span class="number">100%</span>
+                        <span class="label">Industry Match</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="browser-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="browser-address">www.ur-biz.com</div>
+                    </div>
+                    <div class="browser-content">
+                        <div class="content-mockup">
+                            <div class="mockup-header">
+                                <div class="skeleton-text wide"></div>
+                            </div>
+                            <div class="mockup-body">
+                                <div class="skeleton-text"></div>
+                                <div class="text-replacement">
+                                    <span class="original">Placed Order</span>
+                                    <svg class="arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                    <span class="replacement">Started Subscription</span>
+                                </div>
+                                <div class="skeleton-text medium"></div>
+                                <div class="text-replacement">
+                                    <span class="original">Added to Cart</span>
+                                    <svg class="arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                    <span class="replacement">Started Trial</span>
+                                </div>
+                                <div class="skeleton-text"></div>
+                                <div class="text-replacement">
+                                    <span class="original">Abandoned Cart</span>
+                                    <svg class="arrow" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor"
+                                        stroke-width="2" fill="none">
+                                        <path d="M5 12h14M12 5l7 7-7 7" />
+                                    </svg>
+                                    <span class="replacement">Paused Account</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-proof">
+            <h2>Loved by Sales Teams</h2>
+            <p class="social-proof-subtitle">Join hundreds of sales professionals who close more deals with Opptics</p>
+            <div class="testimonials">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "With Opptics, every demo feels custom-built for the prospect. Our close rates jumped
+                        immediately after we started using it. The AI suggestions are spot-on."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23E5E7EB'/%3E%3C/svg%3E"
+                            alt="Sarah Johnson">
+                        <div>
+                            <div class="author-name">Sarah Johnson</div>
+                            <div class="author-title">Senior Solutions Engineer, Enterprise SaaS</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "Finally, personalized demos without the engineering overhead. What used to take days now
+                        happens in seconds. The templates are incredibly accurate."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23E5E7EB'/%3E%3C/svg%3E"
+                            alt="John Smith">
+                        <div>
+                            <div class="author-name">John Smith</div>
+                            <div class="author-title">Account Executive, Tech Solutions</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        "The templates are spot-on for each industry. It's like having a dedicated localization team in
+                        your browser. Game-changer for our sales process."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23E5E7EB'/%3E%3C/svg%3E"
+                            alt="Emily Davis">
+                        <div>
+                            <div class="author-name">Emily Davis</div>
+                            <div class="author-title">Solutions Architect, Cloud Platform</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="templates">
+            <h2>Industry-Specific Templates</h2>
+            <p class="templates-subtitle">Pre-built terminology mappings for every vertical, powered by AI analysis of
+                thousands of successful demos</p>
+            <div class="template-grid">
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon">💼</div>
+                        <h3 class="template-title">Finance</h3>
+                    </div>
+                    <div class="template-examples">
+                        <div class="example">
+                            <span class="original">Customer</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Client</span>
+                        </div>
+                        <div class="example">
+                            <span class="original">Order</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Transaction</span>
+                        </div>
+                        <div class="example">
+                            <span class="original">Product</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Investment</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon">🏥</div>
+                        <h3 class="template-title">Healthcare</h3>
+                    </div>
+                    <div class="template-examples">
+                        <div class="example">
+                            <span class="original">Customer</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Patient</span>
+                        </div>
+                        <div class="example">
+                            <span class="original">Order</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Treatment</span>
+                        </div>
+                        <div class="example">
+                            <span class="original">Product</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Service</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="template-card">
+                    <div class="template-header">
+                        <div class="template-icon">🏃‍♂️</div>
+                        <h3 class="template-title">Wellness</h3>
+                    </div>
+                    <div class="template-examples">
+                        <div class="example">
+                            <span class="original">Customer</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Member</span>
+                        </div>
+                        <div class="example">
+                            <span class="original">Order</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Session</span>
+                        </div>
+                        <div class="example">
+                            <span class="original">Product</span>
+                            <span class="arrow">→</span>
+                            <span class="replacement">Program</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Built for Sales Excellence</h2>
+            <p class="features-subtitle">Transform your demos with powerful features designed for modern sales teams</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">⚡️</div>
+                    <h3>One-Click Transformation</h3>
+                    <p>Switch between industry terminologies instantly, even during live demos. Perfect for dynamic
+                        presentations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Context-Aware</h3>
+                    <p>Intelligent replacements that maintain meaning while speaking your prospect's language with
+                        perfect accuracy.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💾</div>
+                    <h3>Industry Playbooks</h3>
+                    <p>Pre-built templates for Finance, Healthcare, Retail, and more - ready to use with proven
+                        terminology.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Custom Mappings</h3>
+                    <p>Create and save your own terminology sets for unique verticals. Build your perfect demo
+                        environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works" class="how-it-works">
+            <h2>Perfect Demo in 3 Steps</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">🚀</div>
+                    <h3>Install Extension</h3>
+                    <p>Add Opptics to Chrome with one click. No configuration needed - we handle everything
+                        automatically.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">🎯</div>
+                    <h3>Select Template</h3>
+                    <p>Choose from our pre-built industry templates or create custom mappings for your unique needs.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">✨</div>
+                    <h3>Run Your Demo</h3>
+                    <p>Present with confidence knowing your terminology perfectly matches your prospect's industry.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <div class="pricing-header">
+                    <h2>Choose Your Plan</h2>
+                    <p class="section-subtitle">Scale your sales success with the right tools</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Free Tier -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <h3>Free</h3>
+                            <p>Perfect for getting started</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-wrapper">
+                                <span class="amount">0</span>
+                                <span class="period-label">forever free</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>1 industry template</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Basic text replacements</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Up to 10 custom mappings</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Single user</span>
+                            </div>
+                        </div>
+                        <a href="#download" class="pricing-cta secondary">Get Started Free</a>
+                    </div>
+
+                    <!-- Professional Tier -->
+                    <div class="pricing-card featured">
+                        <div class="pricing-card-badge">Most Popular</div>
+                        <div class="pricing-card-header">
+                            <h3>Professional</h3>
+                            <p>For sales professionals</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-wrapper">
+                                <span class="amount">29</span>
+                                <span class="period-label">/user/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>All industry templates</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Unlimited text replacements</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Unlimited custom mappings</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>AI-powered suggestions</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Priority support</span>
+                            </div>
+                        </div>
+                        <a href="#download" class="pricing-cta primary">Start Free Trial</a>
+                    </div>
+
+                    <!-- Team & Enterprise Tier -->
+                    <div class="pricing-card">
+                        <div class="pricing-card-header">
+                            <h3>Team & Enterprise</h3>
+                            <p>For growing teams (5+ users)</p>
+                        </div>
+                        <div class="price">
+                            <div class="price-wrapper">
+                                <span class="amount">79</span>
+                                <span class="period-label">/user/month</span>
+                            </div>
+                        </div>
+                        <div class="pricing-features">
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Everything in Professional</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Team sharing of templates</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Analytics dashboard</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Admin controls & SSO</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Custom AI training</span>
+                            </div>
+                            <div class="feature">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M20 6L9 17l-5-5" />
+                                </svg>
+                                <span>Dedicated support</span>
+                            </div>
+                        </div>
+                        <a href="#contact" class="pricing-cta secondary">Contact Sales</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="./assets/logo.svg" alt="Opptics Logo" width="32" height="32" style="color: #4f46e5;">
+                Opptics
+            </div>
+            <div class="footer-links">
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#terms">Terms of Service</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
